@@ -1,594 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Northstar | Turn Product Strategy Into Shipped Work</title>
-    <meta
-      name="description"
-      content="Northstar is a premium operating system for product teams that turns roadmaps, research, and launch planning into aligned execution."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="page-shell">
-      <div class="announcement-bar">
-        <p>
-          New release: AI-backed planning boards now available for every team.
-          <a href="#pricing">See plans</a>
-        </p>
-      </div>
-
-      <header class="site-header" id="top">
-        <div class="container header-inner">
-          <a class="brand" href="#top" aria-label="Northstar home">
-            <span class="brand-mark"></span>
-            <span class="brand-text">Northstar</span>
-          </a>
-
-          <nav class="desktop-nav" aria-label="Primary navigation">
-            <div class="nav-group has-menu">
-              <button class="nav-trigger" type="button" aria-expanded="false">
-                Product
-              </button>
-              <div class="nav-panel">
-                <a href="#features">
-                  <strong>Planning Hub</strong>
-                  <span>Convert research into prioritized product work.</span>
-                </a>
-                <a href="#showcase">
-                  <strong>Live Dashboards</strong>
-                  <span>Share progress, blockers, and momentum in real time.</span>
-                </a>
-                <a href="#use-cases">
-                  <strong>Team Workflows</strong>
-                  <span>Prebuilt operating models for product, design, and growth.</span>
-                </a>
-              </div>
-            </div>
-            <a href="#benefits">Solutions</a>
-            <a href="#pricing">Pricing</a>
-            <div class="nav-group has-menu">
-              <button class="nav-trigger" type="button" aria-expanded="false">
-                Resources
-              </button>
-              <div class="nav-panel nav-panel-small">
-                <a href="#testimonials">
-                  <strong>Customer Stories</strong>
-                  <span>See how fast teams ship with Northstar.</span>
-                </a>
-                <a href="#faq">
-                  <strong>FAQ</strong>
-                  <span>Answers on setup, scale, and security.</span>
-                </a>
-              </div>
-            </div>
-            <a href="#footer">Company</a>
-          </nav>
-
-          <div class="header-actions">
-            <a class="text-link" href="#faq">Sign in</a>
-            <a class="button button-primary" href="#final-cta">Start free</a>
-          </div>
-
-          <button
-            class="mobile-nav-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-nav"
-            aria-label="Open navigation menu"
-          >
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
-
-      <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
-        <div class="mobile-nav-header">
-          <span class="brand-text">Northstar</span>
-          <button class="mobile-nav-close" type="button" aria-label="Close navigation menu">
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <div class="mobile-nav-body">
-          <div class="mobile-accordion">
-            <button class="mobile-accordion-trigger" type="button" aria-expanded="false">
-              Product
-            </button>
-            <div class="mobile-accordion-panel">
-              <a href="#features">Planning Hub</a>
-              <a href="#showcase">Live Dashboards</a>
-              <a href="#use-cases">Team Workflows</a>
-            </div>
-          </div>
-          <a href="#benefits">Solutions</a>
-          <a href="#pricing">Pricing</a>
-          <div class="mobile-accordion">
-            <button class="mobile-accordion-trigger" type="button" aria-expanded="false">
-              Resources
-            </button>
-            <div class="mobile-accordion-panel">
-              <a href="#testimonials">Customer Stories</a>
-              <a href="#faq">FAQ</a>
-            </div>
-          </div>
-          <a href="#footer">Company</a>
-        </div>
-        <div class="mobile-nav-footer">
-          <a class="button button-secondary" href="#faq">Sign in</a>
-          <a class="button button-primary" href="#final-cta">Start free</a>
-        </div>
-      </div>
-
-      <main>
-        <section class="hero-section">
-          <div class="container hero-grid">
-            <div class="hero-copy">
-              <span class="eyebrow">Product strategy, finally operational</span>
-              <h1>Turn cross-functional chaos into a single shipping rhythm.</h1>
-              <p class="hero-text">
-                Northstar gives product, design, and growth teams one shared command
-                center for planning, prioritization, and launch execution.
-              </p>
-              <div class="hero-actions">
-                <a class="button button-primary" href="#pricing">Start 14-day free trial</a>
-                <a class="button button-secondary" href="#showcase">Watch product tour</a>
-              </div>
-              <div class="hero-metrics">
-                <div>
-                  <strong>34%</strong>
-                  <span>faster planning cycles</span>
-                </div>
-                <div>
-                  <strong>92%</strong>
-                  <span>team adoption in first month</span>
-                </div>
-                <div>
-                  <strong>4.9/5</strong>
-                  <span>rated by scaling product teams</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="hero-visual" aria-label="Northstar dashboard preview">
-              <div class="glow glow-one"></div>
-              <div class="glow glow-two"></div>
-              <div class="dashboard-frame">
-                <div class="dashboard-topbar">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="dashboard-grid">
-                  <div class="dashboard-card dashboard-card-large">
-                    <div class="card-kicker">Launch readiness</div>
-                    <h2>Spring Release</h2>
-                    <div class="timeline-row">
-                      <span class="chip active">Research</span>
-                      <span class="chip active">Design</span>
-                      <span class="chip">Build</span>
-                      <span class="chip">Launch</span>
-                    </div>
-                    <div class="chart-bars">
-                      <span style="height: 38%"></span>
-                      <span style="height: 54%"></span>
-                      <span style="height: 78%"></span>
-                      <span style="height: 64%"></span>
-                      <span style="height: 88%"></span>
-                      <span style="height: 72%"></span>
-                    </div>
-                  </div>
-                  <div class="dashboard-card stat-card">
-                    <div class="card-kicker">Roadmap confidence</div>
-                    <strong>87%</strong>
-                    <p>Planning risk reduced across 6 active squads.</p>
-                  </div>
-                  <div class="dashboard-card list-card">
-                    <div class="card-kicker">Executive snapshot</div>
-                    <ul>
-                      <li><span></span> Scope approved</li>
-                      <li><span></span> Messaging review</li>
-                      <li><span></span> Launch assets in progress</li>
-                    </ul>
-                  </div>
-                  <div class="dashboard-card dashboard-card-wide">
-                    <div class="card-kicker">Cross-team board</div>
-                    <div class="board-columns">
-                      <div>
-                        <strong>Now</strong>
-                        <span>Finalize beta cohort</span>
-                        <span>QA experiment brief</span>
-                      </div>
-                      <div>
-                        <strong>Next</strong>
-                        <span>Pricing page refresh</span>
-                        <span>Lifecycle campaign setup</span>
-                      </div>
-                      <div>
-                        <strong>Blocked</strong>
-                        <span>Analytics dependency</span>
-                        <span>Legal approval</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="trust-strip">
-          <div class="container trust-row">
-            <span>Trusted by high-output teams at</span>
-            <div class="logo-row" aria-label="Partner companies">
-              <span>ASTRA</span>
-              <span>VERSE</span>
-              <span>PULSEGRID</span>
-              <span>MONO</span>
-              <span>NEXA</span>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-section" id="benefits">
-          <div class="container section-heading centered">
-            <span class="eyebrow">Why teams switch</span>
-            <h2>One operating layer for strategy, delivery, and launch.</h2>
-            <p>
-              Built to remove scattered planning docs, duplicate standups, and endless
-              status updates.
-            </p>
-          </div>
-
-          <div class="container benefits-grid">
-            <article class="info-card">
-              <div class="icon-badge">01</div>
-              <h3>Prioritize with evidence</h3>
-              <p>
-                Tie research signals, usage data, and revenue opportunity directly to
-                every initiative before it reaches the roadmap.
-              </p>
-            </article>
-            <article class="info-card">
-              <div class="icon-badge">02</div>
-              <h3>Align every function</h3>
-              <p>
-                Product, design, engineering, and GTM teams work from the same timeline,
-                reducing handoff friction and launch drift.
-              </p>
-            </article>
-            <article class="info-card">
-              <div class="icon-badge">03</div>
-              <h3>Ship with clarity</h3>
-              <p>
-                Transform abstract roadmaps into sequenced, owner-based execution plans
-                with visible risk and readiness tracking.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="showcase-section" id="showcase">
-          <div class="container showcase-grid">
-            <div class="showcase-panel">
-              <div class="showcase-screen">
-                <div class="screen-sidebar">
-                  <span class="screen-brand"></span>
-                  <span class="screen-nav active"></span>
-                  <span class="screen-nav"></span>
-                  <span class="screen-nav"></span>
-                  <span class="screen-nav"></span>
-                </div>
-                <div class="screen-main">
-                  <div class="screen-header-row">
-                    <div>
-                      <small>Launch center</small>
-                      <strong>Q3 Retention Push</strong>
-                    </div>
-                    <span class="screen-pill">On track</span>
-                  </div>
-                  <div class="screen-chart"></div>
-                  <div class="screen-cards-row">
-                    <div class="mini-panel"></div>
-                    <div class="mini-panel"></div>
-                    <div class="mini-panel"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="showcase-copy">
-              <span class="eyebrow">Product showcase</span>
-              <h2>Designed like a control room, not another doc repository.</h2>
-              <p>
-                Every surface is optimized for scanning: initiative status, owner
-                accountability, confidence scoring, and release progress stay visible in
-                one glance.
-              </p>
-              <div class="bullet-list">
-                <div>
-                  <strong>Signal-first dashboards</strong>
-                  <p>Critical milestones and blockers stay above the fold.</p>
-                </div>
-                <div>
-                  <strong>Executive-ready reporting</strong>
-                  <p>Summaries look polished enough to share without extra formatting.</p>
-                </div>
-                <div>
-                  <strong>Built for weekly cadence</strong>
-                  <p>Planning views update as fast as the work changes.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-section feature-stack" id="features">
-          <div class="container feature-row">
-            <div class="feature-copy">
-              <span class="eyebrow">Deep features</span>
-              <h2>From idea intake to launch readiness, every stage has structure.</h2>
-              <p>
-                Replace fragmented rituals with a shared flow that connects opportunity,
-                planning, delivery, and rollout.
-              </p>
-            </div>
-            <div class="feature-rail">
-              <article class="rail-card">
-                <div class="rail-number">01</div>
-                <div>
-                  <h3>Opportunity mapping</h3>
-                  <p>
-                    Group insights by theme, score potential impact, and move validated
-                    bets into planning.
-                  </p>
-                </div>
-              </article>
-              <article class="rail-card">
-                <div class="rail-number">02</div>
-                <div>
-                  <h3>Release orchestration</h3>
-                  <p>
-                    Coordinate product, design, QA, support, and marketing work in one
-                    unified launch sequence.
-                  </p>
-                </div>
-              </article>
-              <article class="rail-card">
-                <div class="rail-number">03</div>
-                <div>
-                  <h3>Review automation</h3>
-                  <p>
-                    Auto-generate weekly summaries and confidence snapshots for leadership
-                    without manual slide building.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="content-section" id="use-cases">
-          <div class="container section-heading">
-            <span class="eyebrow">Use cases</span>
-            <h2>Flexible enough for every team, opinionated enough to drive action.</h2>
-          </div>
-          <div class="container use-case-grid">
-            <article class="use-case-card accent-blue">
-              <h3>Product leadership</h3>
-              <p>
-                Build roadmaps around evidence, see portfolio risk, and communicate
-                priorities with confidence.
-              </p>
-            </article>
-            <article class="use-case-card accent-violet">
-              <h3>Design and research</h3>
-              <p>
-                Keep discovery insights connected to the work they influence so context is
-                never lost after handoff.
-              </p>
-            </article>
-            <article class="use-case-card accent-teal">
-              <h3>Launch and growth teams</h3>
-              <p>
-                Align campaigns, enablement, and release sequencing without spinning up a
-                separate planning system.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-section testimonials-section" id="testimonials">
-          <div class="container section-heading centered">
-            <span class="eyebrow">Customer proof</span>
-            <h2>Teams feel the difference within the first planning cycle.</h2>
-          </div>
-          <div class="container testimonials-grid">
-            <article class="testimonial-card">
-              <p>
-                “Northstar gave our product org a single language for planning. Our
-                launches are calmer, faster, and finally measurable.”
-              </p>
-              <div>
-                <strong>Maya Chen</strong>
-                <span>VP Product, Astra</span>
-              </div>
-            </article>
-            <article class="testimonial-card">
-              <p>
-                “It feels like the first tool designed for real cross-functional execution,
-                not just backlog management.”
-              </p>
-              <div>
-                <strong>Jon Alvarez</strong>
-                <span>Head of Growth, PulseGrid</span>
-              </div>
-            </article>
-            <article class="testimonial-card">
-              <p>
-                “Leadership trusts the dashboards, squads trust the workflows, and we spend
-                far less time stitching updates together manually.”
-              </p>
-              <div>
-                <strong>Elena Brooks</strong>
-                <span>Chief of Staff, Nexa</span>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-section pricing-section" id="pricing">
-          <div class="container section-heading centered">
-            <span class="eyebrow">Pricing</span>
-            <h2>Start small, scale with your operating system.</h2>
-            <p>Clear plans for focused teams and large organizations alike.</p>
-          </div>
-          <div class="container pricing-grid">
-            <article class="pricing-card">
-              <span class="pricing-label">Starter</span>
-              <h3>$29<span>/seat</span></h3>
-              <p>For growing teams replacing spreadsheets and planning docs.</p>
-              <a class="button button-secondary" href="#final-cta">Start free</a>
-              <ul>
-                <li>Unlimited roadmaps</li>
-                <li>Planning templates</li>
-                <li>Weekly summary exports</li>
-              </ul>
-            </article>
-            <article class="pricing-card featured">
-              <span class="pricing-label">Scale</span>
-              <h3>$79<span>/seat</span></h3>
-              <p>For multi-squad teams coordinating launches across functions.</p>
-              <a class="button button-primary" href="#final-cta">Book demo</a>
-              <ul>
-                <li>Everything in Starter</li>
-                <li>Cross-team launch center</li>
-                <li>Executive reporting layer</li>
-                <li>Advanced permissions</li>
-              </ul>
-            </article>
-            <article class="pricing-card">
-              <span class="pricing-label">Enterprise</span>
-              <h3>Custom</h3>
-              <p>For organizations needing security controls, procurement, and support.</p>
-              <a class="button button-secondary" href="#final-cta">Talk to sales</a>
-              <ul>
-                <li>SAML and SCIM</li>
-                <li>Dedicated onboarding</li>
-                <li>Custom workflow design</li>
-              </ul>
-            </article>
-          </div>
-        </section>
-
-        <section class="content-section faq-section" id="faq">
-          <div class="container faq-grid">
-            <div class="faq-copy">
-              <span class="eyebrow">FAQ</span>
-              <h2>Questions teams ask before they switch.</h2>
-              <p>
-                Northstar is designed to fit into existing product operations quickly,
-                without forcing a painful migration.
-              </p>
-            </div>
-            <div class="faq-list">
-              <article class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                  How long does setup take?
-                </button>
-                <div class="faq-answer">
-                  <p>
-                    Most teams have a working planning workspace in less than a day using
-                    our templates and onboarding checklist.
-                  </p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                  Can leadership use it without living in the tool daily?
-                </button>
-                <div class="faq-answer">
-                  <p>
-                    Yes. Executive views are designed for quick consumption with high-signal
-                    summaries, progress indicators, and risk snapshots.
-                  </p>
-                </div>
-              </article>
-              <article class="faq-item">
-                <button class="faq-question" type="button" aria-expanded="false">
-                  Does it replace our task management system?
-                </button>
-                <div class="faq-answer">
-                  <p>
-                    Not necessarily. Northstar sits above delivery tooling to align teams on
-                    priorities, readiness, and cross-functional launch execution.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="final-cta-section" id="final-cta">
-          <div class="container final-cta-card">
-            <div>
-              <span class="eyebrow">Start now</span>
-              <h2>Build a calmer, faster product operating rhythm.</h2>
-              <p>
-                Replace scattered planning with one premium system your whole team can
-                actually trust.
-              </p>
-            </div>
-            <div class="final-cta-actions">
-              <a class="button button-primary" href="#top">Start free</a>
-              <a class="button button-secondary" href="#pricing">View pricing</a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer" id="footer">
-        <div class="container footer-grid">
-          <div>
-            <a class="brand footer-brand" href="#top">
-              <span class="brand-mark"></span>
-              <span class="brand-text">Northstar</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora | Premium Digital Marketing Agency</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-theme">
+    
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-text text-aurora">Aurora</span>
             </a>
-            <p>
-              A premium planning platform for teams that want better alignment and faster
-              shipping.
-            </p>
-          </div>
-          <div>
-            <h3>Product</h3>
-            <a href="#features">Features</a>
-            <a href="#showcase">Showcase</a>
-            <a href="#pricing">Pricing</a>
-          </div>
-          <div>
-            <h3>Resources</h3>
-            <a href="#testimonials">Stories</a>
-            <a href="#faq">FAQ</a>
-            <a href="#final-cta">Demo</a>
-          </div>
-          <div>
-            <h3>Company</h3>
-            <a href="#top">About</a>
-            <a href="#top">Contact</a>
-            <a href="#top">Privacy</a>
-          </div>
+            <nav class="desktop-nav">
+                <a href="#work">Work</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#process">Process</a>
+                <a href="#insights">Insights</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Book Discovery Call</a>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
-      </footer>
-    </div>
+        <!-- Mobile Dropdown -->
+        <div class="mobile-nav">
+            <a href="#work" class="mobile-link">Work</a>
+            <a href="#expertise" class="mobile-link">Expertise</a>
+            <a href="#process" class="mobile-link">Process</a>
+            <a href="#insights" class="mobile-link">Insights</a>
+            <a href="#contact" class="btn btn-primary w-full mt-4">Book Discovery Call</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero hero-video-bg">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content fade-in-up">
+                <p class="eyebrow text-aurora mb-4">THE PERFORMANCE ENGINE</p>
+                <h1 class="hero-title mb-6">We Build Digital <br><span class="text-aurora">Empires.</span></h1>
+                <p class="hero-subtitle mb-8">Scaling is hard. Most agencies fail. We build precise, high-converting systems for visionary brands looking to dominate their market.</p>
+                <div class="hero-cta-group">
+                    <a href="#contact" class="btn btn-primary btn-lg">Book Discovery Call</a>
+                    <a href="#showreel" class="btn btn-secondary btn-lg btn-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        View Showreel
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Ticker -->
+            <div class="logo-ticker-wrap">
+                <div class="logo-ticker">
+                    <div class="ticker-content">
+                        <!-- Placeholder logos -->
+                        <span class="ticker-logo">ACME CORP</span>
+                        <span class="ticker-logo">SKYLINE</span>
+                        <span class="ticker-logo">NEXUS</span>
+                        <span class="ticker-logo">HORIZON</span>
+                        <span class="ticker-logo">OMEGA</span>
+                        <span class="ticker-logo">NOVA</span>
+                        <!-- Duplicate for seamless scroll -->
+                        <span class="ticker-logo">ACME CORP</span>
+                        <span class="ticker-logo">SKYLINE</span>
+                        <span class="ticker-logo">NEXUS</span>
+                        <span class="ticker-logo">HORIZON</span>
+                        <span class="ticker-logo">OMEGA</span>
+                        <span class="ticker-logo">NOVA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="expertise" class="services section-padding">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <p class="eyebrow text-aurora mb-2">CAPABILITIES ENGINE</p>
+                    <h2 class="section-title">Precision Execution at Scale.</h2>
+                    <p class="section-desc mt-4">We do not guess. We engineer growth through data, creative, and systematic execution.</p>
+                </div>
+
+                <div class="services-grid mt-16">
+                    <div class="glass-card service-card fade-in-up" data-delay="100">
+                        <div class="card-icon mb-6">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h3 class="card-title mb-4">Meta Ads Performance</h3>
+                        <p class="card-desc">Advanced media buying, hyper-segmented audiences, and highly calibrated ROAS targeting.</p>
+                    </div>
+
+                    <div class="glass-card service-card fade-in-up" data-delay="200">
+                        <div class="card-icon mb-6">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
+                        </div>
+                        <h3 class="card-title mb-4">Cinematic Video</h3>
+                        <p class="card-desc">High-retention, scroll-stopping video creative designed specifically to drive conversions.</p>
+                    </div>
+
+                    <div class="glass-card service-card fade-in-up" data-delay="300">
+                        <div class="card-icon mb-6">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <h3 class="card-title mb-4">Conversion Funnels</h3>
+                        <p class="card-desc">Frictionless, high-intent landing pages and funnels optimized for maximum lead quality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics/Proof Section -->
+        <section id="work" class="metrics section-padding">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="metrics-text fade-in-up">
+                        <h2 class="section-title">The Proof is in the Data.</h2>
+                        <p class="section-desc mt-6 mb-8">We have successfully mapped the DNA of highly profitable ad accounts. We scale brands from thousands to millions seamlessly.</p>
+                        <a href="#contact" class="btn btn-secondary">View Case Studies</a>
+                    </div>
+                    <div class="metrics-stats">
+                        <div class="glass-card stat-card fade-in-up" data-delay="100">
+                            <h3 class="stat-number text-aurora">300%</h3>
+                            <p class="stat-label">Average ROAS Increase</p>
+                        </div>
+                        <div class="glass-card stat-card fade-in-up" data-delay="200">
+                            <h3 class="stat-number text-aurora">$50M+</h3>
+                            <p class="stat-label">Profitable Ad Spend Managed</p>
+                        </div>
+                        <div class="glass-card stat-card fade-in-up" data-delay="300">
+                            <h3 class="stat-number text-aurora">98%</h3>
+                            <p class="stat-label">Client Retention Rate</p>
+                        </div>
+                        <div class="glass-card stat-card fade-in-up" data-delay="400">
+                            <h3 class="stat-number text-aurora">14</h3>
+                            <p class="stat-label">Days to Launch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section id="contact" class="final-cta section-padding text-center">
+            <div class="container container-sm fade-in-up">
+                <h2 class="final-cta-title mb-6">Ready to Scale Your Empire?</h2>
+                <p class="final-cta-desc mb-10">Stop burning cash on average creative and poor media buying. Partner with Aurora and dominate.</p>
+                <a href="#contact" class="btn btn-primary btn-xl">Apply for a Discovery Call</a>
+                <p class="mt-6 text-sm text-gray">Limited availability for Q3. Serious inquiries only.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo mb-4 inline-block">
+                        <span class="logo-text text-aurora">Aurora</span>
+                    </a>
+                    <p class="text-gray text-sm">Building digital empires through hyper-calibrated performance marketing.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Company</h4>
+                    <a href="#work">Work</a>
+                    <a href="#expertise">Expertise</a>
+                    <a href="#process">Process</a>
+                    <a href="#careers">Careers</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4 class="footer-col-title">Legal</h4>
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-col-title">Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="LinkedIn">LI</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="text-gray text-sm">&copy; 2026 Aurora Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-  </body>
-  </html>
+</body>
+</html>
