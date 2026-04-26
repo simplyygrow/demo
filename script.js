@@ -1,63 +1,61 @@
-const mobileToggle = document.querySelector('.mobile-nav-toggle');
-const mobileNav = document.querySelector('.mobile-nav');
-const mobileClose = document.querySelector('.mobile-nav-close');
-const mobileLinks = document.querySelectorAll('.mobile-nav a');
-const mobileAccordions = document.querySelectorAll('.mobile-accordion');
-const faqItems = document.querySelectorAll('.faq-item');
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Sticky Header
+    const header = document.getElementById('header');
+    
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
 
-function setMobileNav(open) {
-  if (!mobileToggle || !mobileNav) {
-    return;
-  }
+    // 2. Mobile Menu Toggle
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
 
-  mobileToggle.setAttribute('aria-expanded', String(open));
-  mobileNav.setAttribute('aria-hidden', String(!open));
-  mobileNav.classList.toggle('open', open);
-  document.body.classList.toggle('nav-open', open);
-}
+    mobileBtn.addEventListener('click', () => {
+        mobileBtn.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+    });
 
-mobileToggle?.addEventListener('click', () => setMobileNav(true));
-mobileClose?.addEventListener('click', () => setMobileNav(false));
+    // Close menu when link is clicked
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileBtn.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
 
-mobileLinks.forEach((link) => {
-  link.addEventListener('click', () => setMobileNav(false));
-});
+    // 3. Intersection Observer for fade-in animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.15
+    };
 
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
-    setMobileNav(false);
-  }
-});
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Check if element has a simulated delay
+                const delay = entry.target.getAttribute('data-delay');
+                if (delay) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, parseInt(delay));
+                } else {
+                    entry.target.classList.add('visible');
+                }
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 820) {
-    setMobileNav(false);
-  }
-});
-
-mobileAccordions.forEach((accordion) => {
-  const trigger = accordion.querySelector('.mobile-accordion-trigger');
-  trigger?.addEventListener('click', () => {
-    const expanded = trigger.getAttribute('aria-expanded') === 'true';
-    trigger.setAttribute('aria-expanded', String(!expanded));
-    accordion.classList.toggle('open', !expanded);
-  });
-});
-
-faqItems.forEach((item, index) => {
-  const trigger = item.querySelector('.faq-question');
-  if (!trigger) {
-    return;
-  }
-
-  if (index === 0) {
-    item.classList.add('open');
-    trigger.setAttribute('aria-expanded', 'true');
-  }
-
-  trigger.addEventListener('click', () => {
-    const expanded = trigger.getAttribute('aria-expanded') === 'true';
-    trigger.setAttribute('aria-expanded', String(!expanded));
-    item.classList.toggle('open', !expanded);
-  });
+    const animatedElements = document.querySelectorAll('.fade-in-up');
+    animatedElements.forEach(el => {
+        observer.observe(el);
+    });
 });
